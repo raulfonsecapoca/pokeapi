@@ -5,8 +5,8 @@ gql_compose_config = -f docker-compose.yml -f Resources/compose/docker-compose-p
 gqlv1beta_compose_config = -f docker-compose.yml -f Resources/compose/docker-compose-prod-graphql.yml -f Resources/compose/docker-compose-prod-graphql-v1beta.yml
 
 # Auto-detect Python and pip commands
-PYTHON := $(shell which python3 2>/dev/null || which python 2>/dev/null || echo python3)
-PIP := $(shell which pip3 2>/dev/null || which pip 2>/dev/null || echo pip3)
+PYTHON := python
+PIP := pip
 
 .PHONY: help
 .SILENT:
